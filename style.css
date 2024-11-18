@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Label Styling */
+label {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Input Field Styling */
+input[type="number"] {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #74b9ff;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #5e50df;
+  transform: scale(1.05);
+}
+
+/* Results Section Styling */
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #555;
+}
+
+#result {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="number"],
+  button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input[type="number"] {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
